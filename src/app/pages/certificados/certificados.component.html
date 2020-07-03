@@ -1,0 +1,55 @@
+<section id="certificados">
+
+  <br>
+  <div class="animate__animated animate__fadeIn">
+    <h2>Certificados</h2>
+    <hr>
+  </div>
+  <div class="institucion animate__animated animate__fadeIn">
+    <a href="https://platzi.com" target="_blank">
+      <img width="150px" height="50px"
+      src="assets/images/logoPlatzi.png"
+      alt="logo Institucion">
+    </a>
+    <h3 id="institucion-titulo">Platzi</h3>
+  </div>
+  <br>
+  <div class="row row-cols-1 row-cols-md-6">
+    <div class="col mb-4" *ngFor="let certiPlatzi of ps.arrCertiPlatzi">
+      <div class="card animate__animated animate__fadeIn">
+        <a [href]="certiPlatzi.pdf" target="_blank">
+          <img id="image-platzi"
+               [src]="certiPlatzi.source"
+               class="card-img-top"
+               alt="Certificado Platzi">
+          <h5 id="title-platzi" class="card-title">{{certiPlatzi.title}}</h5>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="institucion animate__animated animate__fadeIn">
+    <a href="https://udemy.com" target="_blank">
+      <img width="150px" height="50px"
+           src="assets/images/logoUdemy.png"
+           alt="logo Institucion">
+    </a>
+    <h3 id="institucion-titulo">Udemy</h3>
+  </div>
+  <br>
+  <div class="row row-cols-1 row-cols-md-6">
+    <div class="col mb-4" *ngFor="let certiUdemy of ps.arrCertiUdemy">
+      <div class="card animate__animated animate__fadeIn">
+        <a [href]="certiUdemy.pdf" target="_blank">
+          <img id="image-udemy"
+               [src]="certiUdemy.source"
+               class="card-img-top"
+               alt="Certificado Platzi">
+          <h5 id="title-platzi" class="card-title">{{certiUdemy.title}}</h5>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+</section>

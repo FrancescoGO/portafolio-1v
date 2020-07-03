@@ -1,0 +1,80 @@
+#certificados {
+
+  color: white;
+  background-repeat: fit;
+  background: linear-gradient(180deg, rgb(0, 112, 204) 30%, rgba(49,95,194,1) 60%, white 100%);
+
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 60px;
+  height: 100vh;
+  z-index: -1;
+
+}
+
+#certificados hr {
+
+  border-top: 3px solid white;
+
+}
+
+.institucion {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 50px;
+  margin: 0;
+}
+
+#institucion-titulo {
+
+  position: absolute;
+  left: 60px;
+
+}
+
+.institucion a {
+
+  position: absolute;
+  clip-path: inset(0 66% 0 0);
+  cursor: pointer;
+
+}
+
+#image-platzi {
+
+  box-shadow: #54C85C 0px 0px 15px;
+
+}
+
+.card:hover {
+
+  -webkit-transition:all .9s ease;
+  -webkit-transform:scale(1.075);
+  transform:scale(1.075);
+  opacity: 90%;
+
+}
+
+#title-platzi {
+  color: rgb(42, 42, 42);
+  text-align: center;
+}
+
+#image-udemy {
+
+  box-shadow: #aa3324 0px 0px 15px;
+
+}
+
+@media screen and (max-width:768px) {
+
+  .card:hover {
+
+    -webkit-transition:all .0s ease;
+    -webkit-transform:scale(1.0);
+    transform:scale(1.0);
+
+  }
+
+}

@@ -1,0 +1,25 @@
+<section id="navbar_section">
+  <div class="navbarfgo">
+
+    <div (click)="activar()" class="menu-btn" [ngClass]="{'open': menuActive}">
+      <div class="menu-btn__burger">
+      </div>
+    </div>
+
+    <a id="logoFrancesco" routerLink="/home">
+      FrancescoGO
+    </a>
+
+    <ul id="menu-list" [ngClass]="{'open-list animate__animated animate__fadeIn': menuActive}">
+      <li routerLinkActive="active"><a routerLink="/home">Inicio</a></li>
+      <li routerLinkActive="active"><a routerLink="/certificados">Certificados</a></li>
+      <li routerLinkActive="active"><a href="mailto:francesco.go.os@gmail.com">Contáctame</a></li>
+      <li><a href="https://github.com/FrancescoGO" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/francescogo/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+      <li><a id="whatsapp" href="https://wa.me/051963573451?text=Hola,%20qué%20tal?.%20Me%20interesa%20conversar%20contigo" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a></li>
+    </ul>
+
+  </div>
+</section>
+
+<script></script>

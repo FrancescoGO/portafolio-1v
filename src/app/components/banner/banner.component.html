@@ -1,0 +1,107 @@
+
+<!-- <div class="contenedor"> -->
+
+  <section id="banner">
+
+    <div class="bannerSectionOne animate__animated animate__pulse">
+      <a href="https://francescogo.github.io/loginapp-angular/" target="_blank"><img  src="https://res.cloudinary.com/francescogo/image/upload/v1593746239/Proyectos/coderSeven_rjjqsk.png"
+            alt="fotoCoderSix"></a>
+      <div class="contenedorIntermedioIzq">
+        <a href="https://francescogo.github.io/angular-templatehtml/" target="_blank"><img id="imagenIntermediaIzq"
+             src="https://res.cloudinary.com/francescogo/image/upload/v1593736040/Proyectos/coderOne_1_csmes2.png"
+             alt="fotoCoderOne"></a>
+      </div>
+      <a href="https://xd.adobe.com/view/fada994e-232f-490e-6b33-66cdc708a890-8ceb/" target="_blank"><img  src="https://res.cloudinary.com/francescogo/image/upload/v1593736041/Proyectos/coderTwo_uwow57.png"
+            alt="fotocoderTwo"></a>
+    </div>
+
+    <div class="bannerSectionTwo">
+      <div class="animate__animated animate__fadeIn">
+        <img id = "fotoFrancesco"
+              width="300px" height="300px"
+              src="https://res.cloudinary.com/francescogo/image/upload/v1593754016/fotoCircleFrancesco_wnqtpg.png"
+              alt="fotoCircleFrancesco">
+        <hr width="75%">
+        <hr width="50%">
+        <hr width="25%">
+      </div>
+      <br>
+      <div class="animate__animated animate__fadeIn">
+        <p>
+          Hola!, Soy <span class="efectoContraste">Francesco Gomez</span><br>
+          <em><span class="efectoContraste">Desarrollador</span> Web</em><br>
+          Con pasión <span class="efectoContraste">por el código.</span>
+        </p>
+        <br>
+        <hr width="25%">
+        <hr width="50%">
+        <hr width="75%">
+        <p>
+          Tecnologías y Herramientas
+        </p>
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <!-- <div class="carousel-item active" data-interval="1500">
+              <img class="carousel-img"
+                    width="50px" height="50px"
+                    src="assets/images/logoAngular.svg"
+                    alt="...">
+              <h5><span class="efectoContraste">Angular 💚</span></h5>
+            </div> -->
+            <div class="carousel-item" *ngFor="let tecno of ps.arrImgTecnologias;let isFirst = first"  [class.active]="isFirst" data-interval="2000">
+              <img class="carousel-img"
+                    width="100px" height="100px"
+                    src="assets/images/{{tecno.source}}"
+                    alt="...">
+              <h5><span class="efectoContraste">{{tecno.title}}</span></h5>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <div id="proyectos__estudio">
+          <h3>Proyectos de Estudio</h3>
+          <hr width="90%">
+          <div class="row row-cols-1 row-cols-md-6">
+            <div class="col mb-4" *ngFor="let proyEst of ps.arrProyectosDeEstudio">
+              <div class="card animate__animated animate__fadeIn">
+                <a [href]="proyEst.link" target="_blank">
+                  <img id="image-udemy"
+                       [src]="proyEst.source"
+                       class="card-img-top"
+                       alt="Certificado Platzi">
+                  <h5 id="title-platzi" class="card-title">{{proyEst.title}}</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bannerSectionThree animate__animated animate__pulse">
+      <a href="https://francescogo.github.io/peliculasapp-angular/" target="_blank"><img  src="https://res.cloudinary.com/francescogo/image/upload/v1593736042/Proyectos/coderSix_bd1ihm.png"
+            alt="fotoCoderSix"></a>
+      <div class="contenedorIntermedioDer">
+        <a href="https://firestore-grafica-74dd1.firebaseapp.com/" target="_blank"><img id="imagenIntermediaDer"
+              src="https://res.cloudinary.com/francescogo/image/upload/v1593736037/Proyectos/coderThree_bmryun.png"
+              alt="fotoCoderThree"></a>
+      </div>
+      <a href="https://francescogo.github.io/spotiapp" target="_blank"><img  src="https://res.cloudinary.com/francescogo/image/upload/v1593736041/Proyectos/coderFour_mejheu.png"
+            alt="fotocoderFour"></a>
+    </div>
+
+  </section>
+
+<!-- </div> -->
+
+
